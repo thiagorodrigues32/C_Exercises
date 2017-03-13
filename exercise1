@@ -1,0 +1,22 @@
+Given a sequence of nonzero integers, followed by 0, print their squares:
+Dada uma seqüência de números inteiros não-nulos, seguida por 0, imprimir seus quadrados: 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n = 1, total;
+
+    while (n != 0){
+        printf("Enter a Number: ");
+        scanf("%d", &n);
+        if (n == 0){
+            printf("\nEnd!\n");
+            break;
+        }
+        total = n * n;
+        printf("Result: %d\n", total);
+    }
+    return 0;
+}
